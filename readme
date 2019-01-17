@@ -6,10 +6,13 @@ Database is in memory h2 hibernate.... you do not need to create a database....
 
 This is a demo app, no security, trottling, paging is implemented
 Validation could be implemented with the help av springboot annotations but I left it for an other time...
+you do need to  have the mvn command and java sdk8 installed
+on osx: brew install mvn/ download java sdk from oracle...
 
 clone the repo
-cd repo
 
+cd repo
+mvn clean install
 docker build -t demo-app
 docker run -d -p 8080:8080 demo-app
 
